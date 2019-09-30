@@ -6,7 +6,9 @@ function arraySum(arr){
   arr.forEach(x =>{
 sum=sum+x
   })
-  return sum
+  return (multiplier) => { 
+      return sum*multiplier
+}
 }
     let sum=arraySum([1,2,3])
-    console.log(sum)
+    console.log(sum(5))
