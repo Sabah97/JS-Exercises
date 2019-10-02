@@ -22,3 +22,31 @@ sum=sum+x
 
     }
     console.log(validEmail("cffhdf"));
+
+    //Task 4
+
+    var library = [ 
+      {
+          author: 'Bill Gates',
+          title: 'The Road Ahead',
+          readingStatus: true,
+         updateStatus: function (read)  { this.readingStatus=read }
+      },
+      {
+          author: 'Steve Jobs',
+          title: 'Walter Isaacson',
+          readingStatus: true,
+          updateStatus: function (read)  { this.readingStatus=read }
+      },
+      {
+          author: 'Suzanne Collins',
+          title:  'Mockingjay: The Final Book of The Hunger Games', 
+          readingStatus: false
+      }];
+      library[1].updateStatus(false)
+      console.log("reading status", library[1].readingStatus)
+
+      function readStatus(index){
+        return library[index].readingStatus
+      }
+   console.log(readStatus(2))
