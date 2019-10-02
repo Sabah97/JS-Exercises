@@ -50,3 +50,47 @@ sum=sum+x
         return library[index].readingStatus
       }
    console.log(readStatus(2))
+
+
+   //Task 5
+
+   var cart = [ 
+    {
+        name: 'Shoes',
+        price: 560,
+        quantity: 4
+    },
+    {
+        name: 'Regular Tees',
+        price: 455.50,
+        quantity: 6
+    },
+    {
+        name: 'Socks',
+        price: 65.99,
+        quantity: 2
+    }];
+function addSomething(newItem)
+{
+cart.push(newItem)
+}
+var newItem={
+  name: 'shirts',
+        price: 70.99,
+        quantity: 1
+}
+addSomething(newItem)
+console.log(cart)
+
+function sortByname(namekey)
+{
+  
+  cart.sort(function(a,b){
+    return a[namekey] - b[namekey];
+  });
+
+}
+sortByname('quantity');
+console.log(cart);
+
+
