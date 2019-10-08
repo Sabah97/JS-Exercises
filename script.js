@@ -94,3 +94,26 @@ sortByname('quantity');
 console.log(cart);
 
 
+
+//Not Working
+
+function findByName(name){
+var name=cart.find(cart => cart.name === 'Socks');
+}
+console.log(name);
+
+
+
+function totalCost(){
+  var sum=0;
+  for(var i=0;i<cart.length;i++){
+    sum+=cart[i]['price'];
+  }
+  return sum;
+}
+console.log(totalCost());
+
+
+
+
+
